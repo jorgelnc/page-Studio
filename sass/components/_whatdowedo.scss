@@ -1,0 +1,40 @@
+.whatdowedo {
+    
+    .whatdowedo__section {
+
+    .whatdowedo__title {
+    font-size: 36px;
+    line-height: 1.1;
+    margin-bottom: 50px;
+    text-align: center;
+    }
+
+    }
+}
+
+.whatdowedo__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    .whatdowedo__item {
+    position: relative;
+
+    .whatdowedo__secondary-title {
+    background-color: rgba(47, 48, 58, 0.8);
+    color: $color-secondary-back;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 370px;
+    bottom: 0px;
+    font-family: inherit;
+    font-weight: 700;
+    }
+
+    }
+}

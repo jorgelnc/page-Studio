@@ -1,0 +1,45 @@
+.customers{
+
+.customers__content {
+    background-color: $color-text-light;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .customers__title {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 50px;
+    }
+
+    }
+}
+
+.customers__companies {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    .customers__companies-item {
+    
+    .customers__companies-icons-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-text-light;
+    border: 1px $color-border-clients solid;
+    border-radius: 4px;
+    transition: fill 250ms $cubic, background-color 250ms $cubic;
+    padding: 10px 60px;
+    fill: $svg--section;
+
+    &:hover, &:focus{
+    fill: $color-main;
+    border-color: $color-main;
+    }
+
+    }
+    
+    }
+}
+

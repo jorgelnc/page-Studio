@@ -1,0 +1,57 @@
+.hero {
+    padding-top: 0;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: linear-gradient(to right,rgba(47,48,58,0.3), rgba(47,48,58,0.4)),url(../images/backgroundmain.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    .hero__container {
+    
+        .hero__title {
+        width: 570px;
+        color: white;
+        font-size: 44px;
+        line-height: 1.4;
+        text-align: center;
+        margin: 0 auto;
+    }
+    }
+}
+
+.hero__button__container{
+    margin-top: 40px;
+    text-align: center;
+
+    .hero__button {
+    background-color: $color-main;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.8;
+    letter-spacing: 0.06em;
+    font-family: inherit;
+    color: #FFFFFF;
+    border-radius: 4px;
+    padding: 10px 2px;
+    border-style: none;
+    cursor: pointer;
+    box-shadow: 1px 1px 2px 1px $color-text-main;
+    transition: color 250ms $cubic, background-color 250ms $cubic, box-shadow 250ms $cubic;
+
+    &:hover, &:focus {
+    background-color: $color-active;
+    box-shadow: 1px 2px 3px 2px $color-text-main;
+
+    }
+    
+    }
+
+}
+
+
+
+/* Boton de servicio principal */
+
+
+

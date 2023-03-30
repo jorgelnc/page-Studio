@@ -1,0 +1,110 @@
+.applications__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    .applications__buttons__list {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 8px;
+    margin-bottom: 34px;
+    }   
+}
+
+.applications__item{
+
+.applications__button {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.03em;
+    padding: 6px 24px;
+
+    &:hover, &:focus {
+    box-shadow: 0px 2px 4px $color-secondary;
+}
+}
+}
+
+.applications__button--current{
+    background-color: $color-main;
+    color: $color-text-light;
+}
+
+.applications__cards__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    .applications__cards__item {
+    font-family: inherit;
+    font-size: 18px;
+    border: 1px solid $color-secondary;
+    border-style: none;
+    margin-top: 20px;
+    box-shadow: 0px 1px 4px $color-secondary;
+    transition: box-shadow 250ms $cubic, transform 250ms $cubic;
+    flex-basis: calc((100% - 60px) / 3);
+
+    &:hover {
+    font-family: inherit;
+    font-size: 18px;
+    border: 1px solid $color-secondary;
+    border-style: none;
+    box-shadow: 2px 2px 4px $color-secondary;
+    cursor: pointer;
+    }
+
+    &:hover .applications__overlay__block {
+    transform: translateY(0);
+}
+}
+}
+
+.applications__overlay {
+    position: relative;
+    overflow: hidden;
+
+    .applications__overlay__block {
+    width: 370px;
+    height: 294px;
+    background-color: rgba(33,150,243,0.85);
+    position: absolute;
+    top: 0;
+    color: $color-text-light;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    transform: translateY(100%);
+    transition: transform 250ms $cubic;
+    font-family: inherit;
+    font-size: 18px;
+}
+}
+
+.applications__cards__content {
+    padding: 20px 24px;
+
+    .applications__cards__title {
+    font-family: inherit;
+    margin-bottom: 4px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 0.06em;
+    }
+
+    .applications__cards__description {
+    color: $color-secondary;
+    line-height: 1.8;
+    font-size: 16px;
+    font-weight: 400;
+    }
+
+}
+
+
+

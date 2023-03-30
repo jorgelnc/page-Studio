@@ -1,0 +1,135 @@
+.header {
+
+    .header__container {
+    display: flex;
+    justify-content: space-between;
+    
+    .header__logo {
+    color: $color-main;
+    font-family: 'Raleway', sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.2;
+    text-decoration: none;
+    padding: 20px;
+    margin-right: auto;
+    }
+
+}
+
+}
+
+.header__nav {
+
+.header__nav__list {
+    color: $color-text-main;
+    line-height: 1.1;
+    font-weight: 500;
+    text-decoration: none;
+    display: flex;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    position: relative;
+    
+    .header__item {
+        
+        .header__link {
+        padding-top: 32px;
+        padding-bottom: 32px;
+        position: relative;
+        transition: color 250ms $cubic;
+        
+    }
+
+    }
+
+    .header__item:not(:last-child) {
+        margin-right: 50px;
+    }
+
+    }
+}
+
+.header__contacts {
+    display: flex;
+    margin-left: auto;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-weight: 500;
+    
+    .header__contacts__item {
+
+        .header__contacts__link {
+        color: $color-secondary;
+        line-height: 1.1;
+        text-decoration: none;
+        transition: color 250ms $cubic;
+
+        &:hover, &:focus {
+        color: $color-main;
+        }
+
+        }
+    
+    }
+
+    .header__contacts__item:not(:last-child){
+    margin-right: 30px;
+
+    }
+
+}
+
+.header__container--border {
+    border-bottom: 1px solid $color-border-head;
+}
+
+.header__line__link {
+    
+    &:hover:after {
+    content: "";
+    background-color: $color-main;
+    border-radius: 10px;
+    width: 100%;
+    height: 5px;
+    position: absolute;
+    bottom: -1px;
+    display: flex;
+    justify-content: center;
+}
+}
+
+::after {
+    transition: background-color 250ms $cubic;
+}
+
+.link:hover, .link:focus {
+color: $color-main;
+text-decoration: none;
+}
+
+.mail-current:hover, .mail-current:focus {
+    fill: currentColor;
+}
+
+.cell-current:hover, .cell-current:focus{
+    fill: currentColor;
+}
+
+.header__link--current {
+    color: $color-main;
+
+    &::after {
+    content: "";
+    background-color: $color-main;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 65px;
+    height: 5px;
+    position: absolute;
+    bottom: -1px;
+    display: flex;
+    justify-content: center;
+}
+}
+
