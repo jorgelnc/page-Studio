@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: space-between;
 
-    .applications__buttons__list {
+    .applications__buttons-list {
     display: flex;
     justify-content: space-evenly;
     gap: 8px;
@@ -33,12 +33,12 @@
     color: $color-text-light;
 }
 
-.applications__cards__list {
+.applications__cards-list {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
 
-    .applications__cards__item {
+    .applications__cards-item {
     font-family: inherit;
     font-size: 18px;
     border: 1px solid $color-secondary;
@@ -57,7 +57,7 @@
     cursor: pointer;
     }
 
-    &:hover .applications__overlay__block {
+    &:hover .applications__overlay-block {
     transform: translateY(0);
 }
 }
@@ -67,7 +67,7 @@
     position: relative;
     overflow: hidden;
 
-    .applications__overlay__block {
+    .applications__overlay-block {
     width: 370px;
     height: 294px;
     background-color: rgba(33,150,243,0.85);
@@ -85,10 +85,10 @@
 }
 }
 
-.applications__cards__content {
+.applications__cards-content {
     padding: 20px 24px;
 
-    .applications__cards__title {
+    .applications__cards-title {
     font-family: inherit;
     margin-bottom: 4px;
     font-style: normal;
@@ -97,7 +97,7 @@
     letter-spacing: 0.06em;
     }
 
-    .applications__cards__description {
+    .applications__cards-description {
     color: $color-secondary;
     line-height: 1.8;
     font-size: 16px;

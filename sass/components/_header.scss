@@ -57,9 +57,9 @@
     padding-bottom: 32px;
     font-weight: 500;
     
-    .header__contacts__item {
+    .header__contacts-item {
 
-        .header__contacts__link {
+        .header__contacts-link {
         color: $color-secondary;
         line-height: 1.1;
         text-decoration: none;
@@ -73,7 +73,7 @@
     
     }
 
-    .header__contacts__item:not(:last-child){
+    .header__contacts-item:not(:last-child){
     margin-right: 30px;
 
     }
@@ -84,7 +84,7 @@
     border-bottom: 1px solid $color-border-head;
 }
 
-.header__line__link {
+.header__line-link {
     
     &:hover:after {
     content: "";

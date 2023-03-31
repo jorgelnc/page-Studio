@@ -1,0 +1,97 @@
+    $color-main: rgb(33, 150, 243);
+    $color-secondary: #757575;
+    $color-background-sections: rgb(47, 48, 58);
+    $color-text-main: #212121;
+    $color-text-light: #FFFFFF;
+    $color-secondary-back: #F5F4FA;
+    $color-active: #0000ff;
+    $color-border-head: #ECECEC;
+    $color-border-clients: #adb1b8;
+    $cubic: cubic-bezier(0.4, 0, 0.2, 1);
+    $svg--section: #AFB1B8;
+    $background-icon-foot: rgba(255, 255, 255, 0.1);
+
+    h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+}
+
+html{
+    box-sizing: border-box;
+}
+
+*,*::after,*::before{
+    box-sizing: inherit;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+address{
+    font-style: normal;
+}
+
+.link {
+    text-decoration: none;
+    color: inherit;
+    color: $color-text-main;
+    transition: color 250ms $cubic;
+}
+
+.list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', "Arial", sans-serif;
+    color: $color-text-main;
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+}
+
+.container {
+width: 1200px;
+margin: 0 auto;
+padding: 0 15px;
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+svg:hover {
+    cursor: pointer;
+}
+
+label {
+font-weight: 400;
+font-size: 12px;
+line-height: 14px;
+letter-spacing: 0.01em;
+color: $color-secondary;
+}
+
+input {
+    cursor: pointer;
+}
+
+.button {
+    cursor: pointer;
+    font-family: inherit;
+    border-style: none;
+    border-radius: 4px;
+    padding: 10px;
+    transition: color 250ms $cubic, background-color 250ms $cubic;
+}
+
+.button:hover, .button:focus {
+    background-color: $color-main;
+    color: $color-text-light;
+    font-family: inherit;
+}
