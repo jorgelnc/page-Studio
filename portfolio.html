@@ -14,7 +14,7 @@
       rel="stylesheet"
       href="node_modules/modern-normalize/modern-normalize.css"
     />
-    <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="stylesheet" href="./sass/main.css" />
   </head>
   <body>
     <header class="header">
@@ -47,7 +47,7 @@
               href="mailto:info@devstudio.com"
               class="header__contacts-link mail-current"
               ><svg class="header__icon mail-current" width="16" height="12">
-                <use href="./symbol-defs.svg#icon-sobreactivable"></use>
+                <use href="./images/icons/icons.svg#icon-sobreactivable"></use>
               </svg>
               info@devstudio.com</a
             >
@@ -57,7 +57,7 @@
               href="tel:+525555296000"
               class="header__contacts-link cell-current"
               ><svg class="header__icon cell-current" width="16" height="12">
-                <use href="./symbol-defs.svg#icon-Vector-cell"></use>
+                <use href="./images/icons/icons.svg#icon-Vector-cell"></use>
               </svg>
               +52 55 5529 6000</a
             >
@@ -101,12 +101,33 @@
           <ul class="applications__cards-list list">
             <li class="applications__cards-item">
               <div class="applications__overlay">
-                <img
-                  src="./images/Tecnoduck.jpg"
-                  alt="Guia de profesionales"
-                  width="370"
-                  class="applications__cards__img"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="./images/Tecnoduck.jpg, ./images/Tecnoduck_2x.jpg"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/Tecnoduck_t1x.jpg,
+                      ./images/Tecnoduck_t2x.jpg
+                    "
+                  />
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/Tecnoduck_d1x.jpg,
+                      ./images/Tecnoduck_d2x.jpg
+                    "
+                  />
+                  <img
+                    src="./images/Tecnoduck.jpg"
+                    alt="Guia de profesionales"
+                    width="370"
+                    class="applications__cards__img"
+                  />
+                </picture>
+
                 <div class="applications__overlay-block">
                   <p class="applications__overlay__text">
                     Es una plataforma de distribución de coronavirus de última
@@ -123,12 +144,36 @@
             </li>
             <li class="applications__cards-item">
               <div class="applications__overlay">
-                <img
-                  src="./images/pdnvsestrelladorada.jpg"
-                  alt="Poster de New Orleans vs Estrella Dorada"
-                  width="370"
-                  class="applications__cards__img"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/pdnvsestrelladorada.jpg,
+                      ./images/pdnvsestrelladorada_2x.jpg
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/pdnvsestrelladorada_t1x.jpg,
+                      ./images/pdnvsestrelladorada_t2x.jpg
+                    "
+                  />
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/pdnvsestrelladorada_d1x.jpg,
+                      ./images/pdnvsestrelladorada_d2x.jpg
+                    "
+                  />
+                  <img
+                    src="./images/pdnvsestrelladorada.jpg"
+                    alt="Poster de New Orleans vs Estrella Dorada"
+                    width="370"
+                    class="applications__cards__img"
+                  />
+                </picture>
+
                 <div class="applications__overlay-block">
                   <p class="applications__overlay__text">
                     Es una plataforma de distribución de coronavirus de última
@@ -147,12 +192,27 @@
             </li>
             <li class="applications__cards-item">
               <div class="applications__overlay">
-                <img
-                  src="./images/seafood.jpg"
-                  alt="Restaurante"
-                  width="370"
-                  class="applications__cards__img"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="./images/seafood.jpg, ./images/seafood_2x.jpg"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="./images/seafood_t1x.jpg, ./images/seafood_t2x.jpg"
+                  />
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="./images/seafood_d1x.jpg, ./images/seafood_d2x.jpg"
+                  />
+                  <img
+                    src="./images/seafood.jpg"
+                    alt="Restaurante"
+                    width="370"
+                    class="applications__cards__img"
+                  />
+                </picture>
+
                 <div class="applications__overlay-block">
                   <p class="applications__overlay__text">
                     Es una plataforma de distribución de coronavirus de última
@@ -169,12 +229,27 @@
             </li>
             <li class="applications__cards-item">
               <div class="applications__overlay">
-                <img
-                  src="./images/prime.jpg"
-                  alt="Proyecto"
-                  width="370"
-                  class="applications__cards__img"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="./images/prime.jpg, ./images/prime_2x.jpg"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="./images/prime_t1x.jpg, ./images/prime_t2x.jpg"
+                  />
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="./images/prime_d1x.jpg, ./images/prime_d2x.jpg"
+                  />
+                  <img
+                    src="./images/prime.jpg"
+                    alt="Proyecto"
+                    width="370"
+                    class="applications__cards__img"
+                  />
+                </picture>
+
                 <div class="applications__overlay-block">
                   <p class="applications__overlay__text">
                     Es una plataforma de distribución de coronavirus de última
@@ -191,12 +266,27 @@
             </li>
             <li class="applications__cards-item">
               <div class="applications__overlay">
-                <img
-                  src="./images/pcajas.jpg"
-                  alt="Proyecto de cajas"
-                  width="370"
-                  class="applications__cards__img"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="./images/pcajas.jpg, ./images/pcajas_2x.jpg"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="./images/pcajas_t1x.jpg, ./images/pcajas_t2x.jpg"
+                  />
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="./images/pcajas_d1x.jpg, ./images/pcajas_d2x.jpg"
+                  />
+                  <img
+                    src="./images/pcajas.jpg"
+                    alt="Proyecto de cajas"
+                    width="370"
+                    class="applications__cards__img"
+                  />
+                </picture>
+
                 <div class="applications__overlay-block">
                   <p class="applications__overlay__text">
                     Es una plataforma de distribución de coronavirus de última
@@ -213,12 +303,36 @@
             </li>
             <li class="applications__cards-item">
               <div class="applications__overlay">
-                <img
-                  src="./images/insnolimits.jpg"
-                  alt="Diseño fondo negro en Monitor"
-                  width="370"
-                  class="applications__cards__img"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/insnolimits.jpg,
+                      ./images/insnolimits_2x.jpg
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/insnolimits_t1x.jpg,
+                      ./images/insnolimits_t2x.jpg
+                    "
+                  />
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/insnolimits_d1x.jpg,
+                      ./images/insnolimits_d2x.jpg
+                    "
+                  />
+                  <img
+                    src="./images/insnolimits.jpg"
+                    alt="Diseño fondo negro en Monitor"
+                    width="370"
+                    class="applications__cards__img"
+                  />
+                </picture>
+
                 <div class="applications__overlay-block">
                   <p class="applications__overlay__text">
                     Es una plataforma de distribución de coronavirus de última
@@ -237,12 +351,33 @@
             </li>
             <li class="applications__cards-item">
               <div class="applications__overlay">
-                <img
-                  src="./images/edicionlim.jpg"
-                  alt="Edicion de un libro abierto"
-                  width="370"
-                  class="applications__cards__img"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="./images/edicionlim.jpg, ./images/edicionlim_2x.jpg"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/edicionlim_t1x.jpg,
+                      ./images/edicionlim_t2x.jpg
+                    "
+                  />
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/edicionlim_d1x.jpg,
+                      ./images/edicionlim_d2x.jpg
+                    "
+                  />
+                  <img
+                    src="./images/edicionlim.jpg"
+                    alt="Edicion de un libro abierto"
+                    width="370"
+                    class="applications__cards__img"
+                  />
+                </picture>
+
                 <div class="applications__overlay-block">
                   <p class="applications__overlay__text">
                     Es una plataforma de distribución de coronavirus de última
@@ -259,12 +394,27 @@
             </li>
             <li class="applications__cards-item">
               <div class="applications__overlay">
-                <img
-                  src="./images/lab.jpg"
-                  alt="Etiqueta de LAB"
-                  width="370"
-                  class="applications__cards__img"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="./images/lab.jpg, ./images/lab_2x.jpg"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="./images/lab_t1x.jpg, ./images/lab_t2x.jpg"
+                  />
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="./images/lab_d1x.jpg, ./images/lab_d2x.jpg"
+                  />
+                  <img
+                    src="./images/lab.jpg"
+                    alt="Etiqueta de LAB"
+                    width="370"
+                    class="applications__cards__img"
+                  />
+                </picture>
+
                 <div class="applications__overlay-block">
                   <p class="applications__overlay__text">
                     Es una plataforma de distribución de coronavirus de última
@@ -281,12 +431,36 @@
             </li>
             <li class="applications__cards-item">
               <div class="applications__overlay">
-                <img
-                  src="./images/ncrecimiento.jpg"
-                  alt="aplicacion de negocios en laptop"
-                  width="370"
-                  class="applications__cards__img"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/ncrecimiento.jpg,
+                      ./images/ncrecimiento_2x.jpg
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/ncrecimiento_t1x.jpg,
+                      ./images/ncrecimiento_t2x.jpg
+                    "
+                  />
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/ncrecimiento_d1x.jpg,
+                      ./images/ncrecimiento_d2x.jpg
+                    "
+                  />
+                  <img
+                    src="./images/ncrecimiento.jpg"
+                    alt="aplicacion de negocios en laptop"
+                    width="370"
+                    class="applications__cards__img"
+                  />
+                </picture>
+
                 <div class="applications__overlay-block">
                   <p class="applications__overlay__text">
                     Es una plataforma de distribución de coronavirus de última
@@ -344,28 +518,30 @@
                 <li class="footer__icons-item">
                   <a href="" class="footer__icon-link">
                     <svg width="20" height="20" class="footer__icon">
-                      <use href="./symbol-defs.svg#icon-instagram2"></use>
+                      <use
+                        href="./images/icons/icons.svg#icon-instagram2"
+                      ></use>
                     </svg>
                   </a>
                 </li>
                 <li class="footer__icons-item">
                   <a href="" class="footer__icon-link">
                     <svg width="20" height="20" class="footer__icon">
-                      <use href="./symbol-defs.svg#icon-twitter1"></use>
+                      <use href="./images/icons/icons.svg#icon-twitter1"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="footer__icons-item">
                   <a href="" class="footer__icon-link">
                     <svg width="20" height="20" class="footer__icon">
-                      <use href="./symbol-defs.svg#icon-facebook1"></use>
+                      <use href="./images/icons/icons.svg#icon-facebook1"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="footer__icons-item">
                   <a href="" class="footer__icon-link">
                     <svg width="20px" height="20" class="footer__icon">
-                      <use href="./symbol-defs.svg#icon-linkedin1"></use>
+                      <use href="./images/icons/icons.svg#icon-linkedin1"></use>
                     </svg>
                   </a>
                 </li>
@@ -386,12 +562,13 @@
             <button type="submit" class="subscribe__button">
               Suscríbase
               <svg class="subscribe__icon" width="20" height="20">
-                <use href="./symbol-defs.svg#icon-subscribe"></use>
+                <use href="./images/icons/icons.svg#icon-subscribe"></use>
               </svg>
             </button>
           </form>
         </div>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

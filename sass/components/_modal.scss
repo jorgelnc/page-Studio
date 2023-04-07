@@ -269,3 +269,45 @@ pointer-events:none;
 
     }
 }
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+    
+    .modal {
+        width: 450px;
+        position: absolute;
+        left: 400px;
+    }
+
+    .modal__container {
+    width: 450px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+        
+    .modal__title {
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    color: $color-text-main;
+    margin-bottom: 12px;
+    }
+
+    #name {
+        width: 370px;
+    }
+
+    #phone-number {
+width: 370px;
+    }
+
+    #email {
+width: 370px;
+    }
+
+    #comments {
+width: 370px;
+    }
+}
+
+}
