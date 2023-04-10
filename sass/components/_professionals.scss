@@ -2,6 +2,7 @@
     background-color: $color-secondary-back;
 
     .professionals__container{
+         padding-top: 94px;
     
     .professionals__secondary-title {
     font-size: 36px;
@@ -84,5 +85,40 @@
     }
 
     }
+}
+}
+
+
+@media screen and (max-width: 767px) {
+    .professionals {
+    background-color: $color-secondary-back;
+    width: 100%;
+
+    .professionals__container{
+         padding-top: 60px;
+         max-width: 480px;
+         padding-bottom: 60px;
+    
+    .professionals__secondary-title {
+    font-size: 28px;
+    line-height: 1.1;
+    margin-bottom: 50px;
+    font-family: inherit;
+    text-align: center;
+    }
+
+    }
+
+}
+
+.professionals__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    .professionals__item {
+    flex-basis: calc((100% - 20px) / 1);
+}
+
 }
 }
