@@ -54,15 +54,16 @@ body {
     letter-spacing: 0.03em;
 }
 
-.container {
-width: 1200px;
-margin: 0 auto;
-padding: 0 15px;
-}
-
 .section {
     padding-top: 94px;
     padding-bottom: 94px;
+}
+
+@media screen and (min-width: 1200px){
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 }
 
 svg:hover {

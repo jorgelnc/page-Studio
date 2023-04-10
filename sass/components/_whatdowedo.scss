@@ -39,14 +39,7 @@
     }
 }
 
-@media screen and (min-width: 480px) and (max-width: 768px) {
-
-    .whatdowedo {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 767px) {
 
     .whatdowedo {
         display: none;

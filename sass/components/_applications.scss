@@ -105,32 +105,3 @@
     }
 
 }
-
-
-@media screen and (min-width: 480px) and (max-width: 768px) {
-
-    .applications__container {
-    width: 768px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-
-    .applications__buttons-list {
-    display: flex;
-    justify-content: space-evenly;
-    gap: 8px;
-    margin-bottom: 34px;
-    }   
-}
-.applications__cards-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-
-    .applications__cards-item {
-    flex-basis: calc((100% - 30px) / 2);
-    }
-}
-
-}
