@@ -51,7 +51,10 @@
   }
 
   @media screen and (max-width: 767px) {
-  .hero__container {
+  
+    .hero {
+    width: 100%;
+ .hero__container {
     max-width: 480px;
 
         .hero__title {
@@ -63,4 +66,6 @@
         margin: 0 auto;
     }
     }
+}
+
 }

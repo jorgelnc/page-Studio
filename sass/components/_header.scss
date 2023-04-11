@@ -133,8 +133,12 @@ text-decoration: none;
 }
 }
 
+/* elemento menu */
+
  .menu {
   display: flex;
+  flex-direction: column;
+  gap: 30px;
   padding: 0;
   margin: 0;
   list-style: none;
@@ -156,20 +160,13 @@ display: none;
 }
 
 .menu .link {
-  padding: 10px;
   color: inherit;
   text-decoration: none;
-}
-
-.menu .link:hover,
-.menu .link:focus {
-  text-decoration: underline;
 }
 
 .menu-toggle {
   min-height: 40px;
   min-width: 40px;
-  display: flex;
   align-items: center;
   justify-content: center;
   margin: 0;
@@ -182,11 +179,13 @@ display: none;
   position: absolute;
   right: 16px;
   top: 20px;
-}
+  transition: background-color 250ms $cubic, fill 250ms $cubic;
 
-.menu-toggle:hover,
-.menu-toggle:focus {
+  &:hover,
+&:focus {
   background-color: rgba(0, 0, 0, 0.1);
+  fill: $color-main;
+}
 }
 
 .menu-container {
@@ -195,10 +194,12 @@ display: none;
   left: 0;
   width: 100vw;
   height: 100vh;
-  padding: 32px;
-  background-color: #3f51b5;
+  padding: 50px 0 50px 40px;
+  background-color: $color-text-light;
   z-index: 1;
-
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
 }
@@ -225,4 +226,73 @@ display: none;
   padding: 10px;
   color: #fff;
   text-decoration: none;
+}
+
+.menu__socialmedialink {
+color: $color-main;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+
+ &:hover, &:focus {
+ color: $color-text-main;
+ }
+}
+
+.menu__contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  .menu__contacts-item {
+
+    .menu__contacts-link{
+      &:hover{
+        color: $color-text-main;
+      }
+    }
+
+.menu__contacts--mail {
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 34px;
+letter-spacing: 0.02em;
+color: $color-main;
+}
+.menu__contacts--cell {
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+letter-spacing: 0.02em;
+color: $svg--section;
+}
+
+  }
+}
+
+.menu__link {
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 40px;
+line-height: 47px;
+text-align: center;
+letter-spacing: 0.02em;
+
+&:hover, &:focus {
+color: $color-main;
+}
+}
+
+.menu__socialmedia {
+  max-width: 360px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu__socialmedia-item--line:not(:last-child) {
+    border-right: 1px solid rgba(33,33,33,0.2);
+    padding: 0 6px;
 }
