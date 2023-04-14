@@ -3,6 +3,7 @@
 
     .professionals__container{
          padding-top: 94px;
+         padding-bottom: 94px;
     
     .professionals__secondary-title {
     font-size: 36px;
@@ -118,6 +119,41 @@
 
     .professionals__item {
     flex-basis: calc((100% - 20px) / 1);
+}
+
+}
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .professionals {
+    background-color: $color-secondary-back;
+    width: 100%;
+
+    .professionals__container{
+         padding-top: 60px;
+         max-width: 768px;
+         padding-bottom: 60px;
+    
+    .professionals__secondary-title {
+    font-size: 28px;
+    line-height: 1.1;
+    margin-bottom: 50px;
+    font-family: inherit;
+    text-align: center;
+    }
+
+    }
+
+}
+
+.professionals__list {
+    display: flex;
+    flex-wrap: wrap;
+
+
+    .professionals__item {
+    flex-basis: calc((100% - 30px) / 2);
 }
 
 }

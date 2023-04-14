@@ -105,3 +105,59 @@
     }
 
 }
+
+@media screen and (max-width: 767px) {
+    
+    .applications {
+        width: 100%;
+    
+    .applications__container {
+    max-width: 480px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    .applications__buttons-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }   
+}
+}
+
+.applications__item{
+flex-basis: calc((100% - 60px) / 3);
+}
+
+.applications__button--current{
+    width: 100%;
+}
+
+.applications__cards-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    .applications__cards-item{
+        flex-basis: calc((100% - 20px) / 1);
+    }
+}
+
+.applications__cards-img {
+    width: 100%;
+}
+
+.applications__overlay {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+
+    .applications__overlay-block {
+    width: 100%;
+    height: 100%;
+    }
+}
+
+}
+

@@ -64,6 +64,15 @@
           </li>
         </ul>
       </div>
+      <button
+        class="menu-toggle js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <svg class="menu__icon" width="20" height="16">
+          <use href="./images/icons/icons.svg#icon-menu-mobile"></use>
+        </svg>
+      </button>
     </header>
     <main class="applications">
       <section class="section applications__section">
@@ -124,7 +133,7 @@
                     src="./images/Tecnoduck.jpg"
                     alt="Guia de profesionales"
                     width="370"
-                    class="applications__cards__img"
+                    class="applications__cards-img"
                   />
                 </picture>
 
@@ -170,7 +179,7 @@
                     src="./images/pdnvsestrelladorada.jpg"
                     alt="Poster de New Orleans vs Estrella Dorada"
                     width="370"
-                    class="applications__cards__img"
+                    class="applications__cards-img"
                   />
                 </picture>
 
@@ -209,7 +218,7 @@
                     src="./images/seafood.jpg"
                     alt="Restaurante"
                     width="370"
-                    class="applications__cards__img"
+                    class="applications__cards-img"
                   />
                 </picture>
 
@@ -246,7 +255,7 @@
                     src="./images/prime.jpg"
                     alt="Proyecto"
                     width="370"
-                    class="applications__cards__img"
+                    class="applications__cards-img"
                   />
                 </picture>
 
@@ -283,7 +292,7 @@
                     src="./images/pcajas.jpg"
                     alt="Proyecto de cajas"
                     width="370"
-                    class="applications__cards__img"
+                    class="applications__cards-img"
                   />
                 </picture>
 
@@ -329,7 +338,7 @@
                     src="./images/insnolimits.jpg"
                     alt="Diseño fondo negro en Monitor"
                     width="370"
-                    class="applications__cards__img"
+                    class="applications__cards-img"
                   />
                 </picture>
 
@@ -374,7 +383,7 @@
                     src="./images/edicionlim.jpg"
                     alt="Edicion de un libro abierto"
                     width="370"
-                    class="applications__cards__img"
+                    class="applications__cards-img"
                   />
                 </picture>
 
@@ -411,7 +420,7 @@
                     src="./images/lab.jpg"
                     alt="Etiqueta de LAB"
                     width="370"
-                    class="applications__cards__img"
+                    class="applications__cards-img"
                   />
                 </picture>
 
@@ -457,7 +466,7 @@
                     src="./images/ncrecimiento.jpg"
                     alt="aplicacion de negocios en laptop"
                     width="370"
-                    class="applications__cards__img"
+                    class="applications__cards-img"
                   />
                 </picture>
 
@@ -569,6 +578,54 @@
         </div>
       </div>
     </footer>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg width="11" height="11" class="menu__iconclose">
+          <use href="./images/icons/icons.svg#icon-close-window"></use>
+        </svg>
+      </button>
+      <ul class="menu">
+        <li class="menu__item">
+          <a href="./index.html" class="link menu__link">Estudio</a>
+        </li>
+        <li class="menu__item">
+          <a href="portfolio.html" class="link menu__link">Portafolio</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="link menu__link">Contactos</a>
+        </li>
+      </ul>
+      <ul class="menu__contacts list">
+        <li class="menu__contacts-item">
+          <a
+            href="mailto:info@devstudio.com"
+            class="link menu__contacts-link menu__contacts--mail"
+            >info@devstudio.com</a
+          >
+        </li>
+        <li class="menu__contacts-item">
+          <a
+            href="tel:+525555296000"
+            class="link menu__contacts-link menu__contacts--cell"
+            >+52 55 5529 6000</a
+          >
+        </li>
+      </ul>
+      <ul class="menu__socialmedia list">
+        <li class="menu__socialmedia-item menu__socialmedia-item--line">
+          <a href="" class="link menu__socialmedialink">Instagram</a>
+        </li>
+        <li class="menu__socialmedia-item menu__socialmedia-item--line">
+          <a href="" class="link menu__socialmedialink">Twitter</a>
+        </li>
+        <li class="menu__socialmedia-item menu__socialmedia-item--line">
+          <a href="" class="link menu__socialmedialink">Facebook</a>
+        </li>
+        <li class="menu__socialmedia-item menu__socialmedia-item--line">
+          <a href="" class="link menu__socialmedialink">LinkedIn</a>
+        </li>
+      </ul>
+    </div>
     <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

@@ -324,3 +324,57 @@ label {
     }
 
 }
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+        .modal {
+        max-width: 450px;
+        position: absolute;
+        left: 50%;
+        right: 50%;
+    }
+
+    .modal__container {
+    max-width: 450px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+        
+    .modal__title {
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    color: $color-text-main;
+    margin-bottom: 12px;
+    }
+
+    #name {
+        width: 370px;
+    }
+
+    #phone-number {
+width: 370px;
+    }
+
+    #email {
+width: 370px;
+    }
+
+    #comments {
+width: 370px;
+    }
+}
+
+label {
+    font-size: 12px;
+}
+
+.agreements__text {
+    margin-left: 10px;
+    line-height: 1.7;
+    font-weight: 400;
+    font-size: 12px;
+    color: $color-secondary;
+    }
+}
