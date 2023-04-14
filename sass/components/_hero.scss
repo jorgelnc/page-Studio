@@ -54,10 +54,14 @@
   
     .hero {
     width: 100%;
+    max-width: 767px;
+    min-height: 400px;
+
  .hero__container {
-    max-width: 480px;
+   width: 100%;
 
         .hero__title {
+            width: 100%;
         max-width: 360px;
         color: white;
         font-size: 26px;
