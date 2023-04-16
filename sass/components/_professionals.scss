@@ -119,6 +119,11 @@
 
     .professionals__item {
     flex-basis: calc((100% - 20px) / 1);
+    width: 100%;
+}
+
+.professionals__card-content-iconsgroup {
+    width: 100%;
 }
 
 }
