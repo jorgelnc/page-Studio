@@ -748,6 +748,7 @@ input {
   .professionals__list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 30px;
   }
   .professionals__list .professionals__item {
