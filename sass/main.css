@@ -467,6 +467,28 @@ input {
     margin: 0 auto;
   }
 }
+@media screen and (max-width: 768px) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.3), rgba(47, 48, 58, 0.4)), url(/images/backgroundmain_tablet1.jpg);
+    background-size: cover;
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 768px), screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 768px), screen and (min-resolution: 192dpi) and (max-width: 768px), screen and (min-resolution: 2dppx) and (max-width: 768px) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.3), rgba(47, 48, 58, 0.4)), url("/images/backgroundmain_tablet1.jpg");
+  }
+}
+@media screen and (max-width: 480px) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.3), rgba(47, 48, 58, 0.4)), url(/images/backgroundmain_d1x.jpg);
+    background-size: cover;
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 480px), screen and (min-resolution: 192dpi) and (max-width: 480px), screen and (min-resolution: 2dppx) and (max-width: 480px) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.3), rgba(47, 48, 58, 0.4)), url("/images/backgroundmain_d1x.jpg");
+  }
+}
 .advantages .advantages__container .advantages__list {
   display: flex;
   justify-content: space-between;
@@ -1394,7 +1416,7 @@ input {
   cursor: pointer;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .modal {
     max-width: 450px;
     position: absolute;
@@ -1438,15 +1460,15 @@ input {
     color: #757575;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (max-width: 350px) {
   .modal {
-    max-width: 450px;
+    max-width: 350px;
     position: absolute;
     left: 50%;
     right: 50%;
   }
   .modal__container {
-    max-width: 450px;
+    max-width: 350px;
     padding: 40px;
     display: flex;
     flex-direction: column;
@@ -1460,16 +1482,16 @@ input {
     margin-bottom: 12px;
   }
   .modal__container #name {
-    width: 370px;
+    width: 270px;
   }
   .modal__container #phone-number {
-    width: 370px;
+    width: 270px;
   }
   .modal__container #email {
-    width: 370px;
+    width: 270px;
   }
   .modal__container #comments {
-    width: 370px;
+    width: 270px;
   }
   label {
     font-size: 12px;

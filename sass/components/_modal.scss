@@ -270,7 +270,7 @@ pointer-events:none;
     }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
     
     .modal {
         max-width: 450px;
@@ -325,16 +325,16 @@ label {
 
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (max-width: 350px) {
         .modal {
-        max-width: 450px;
+        max-width: 350px;
         position: absolute;
         left: 50%;
         right: 50%;
     }
 
     .modal__container {
-    max-width: 450px;
+    max-width: 350px;
     padding: 40px;
     display: flex;
     flex-direction: column;
@@ -350,19 +350,19 @@ label {
     }
 
     #name {
-        width: 370px;
+        width: 270px;
     }
 
     #phone-number {
-width: 370px;
+width: 270px;
     }
 
     #email {
-width: 370px;
+width: 270px;
     }
 
     #comments {
-width: 370px;
+width: 270px;
     }
 }
 
